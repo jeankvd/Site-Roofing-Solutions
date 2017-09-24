@@ -1,0 +1,75 @@
+/*General*/
+
+/*Nav*/
+
+#scrolled {
+	background-color: black;
+}
+
+nav a {
+	color: white;
+}
+
+/*Hero*/ 
+
+#hero {
+	background-color: skyblue;
+	text-align: center;
+	height: 60vw;
+	margin: 0;
+}
+
+#hero .container {
+	margin-top: 4vw;
+}
+
+
+/*About Us*/
+
+#about {
+	margin: 0;
+	text-align: center;
+	background: #faaaaa;
+}
+
+/*Layout*/
+
+#services {
+	background-color: #f2f2f2;
+	width: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin: 0;
+}
+
+.fa {
+	font-size: 2rem;
+}
+
+.container {
+	text-align: center;
+}
+
+#services .col-sm {
+	border: solid 1px black;
+	border-radius: 2px;
+	margin-left: 2%;
+	background-color: white;
+}
+
+#services .col-sm:last-child {
+	margin-right: 2%;
+}
+
+/*Form*/
+
+form input {
+	display: block;
+}
+
+/*Footer*/
+
+footer {
+	background-color: black;
+	color: white;
+}
