@@ -41,7 +41,7 @@ nav li {
 /*Hero*/ 
 
 #hero {
-	background-color: skyblue;
+	background-color: black;
 	text-align: center;
 	height: 60vw;
 	margin: 0;
@@ -50,7 +50,6 @@ nav li {
 #hero .container {
 	margin-top: 4vw;
 }
-
 
 /*About Us*/
 
