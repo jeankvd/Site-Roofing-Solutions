@@ -1,6 +1,7 @@
 /*General*/
 
 body {
+	background-color: #f2f2f2;
 	color: #FEFEFC;
 }
 
@@ -16,6 +17,7 @@ nav {
 }
 
 #scrolled {
+	color: white;
 	background-color: #0b0100;
 }
 
@@ -33,6 +35,7 @@ nav {
 }
 
 nav a {
+	background: transparent;
 	color: #fefefc;
 	font-size: 1.1rem;
 }
@@ -155,4 +158,3 @@ footer {
 	background-color: black;
 	color: white;
 }
- 
