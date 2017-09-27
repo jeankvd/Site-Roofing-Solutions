@@ -42,7 +42,7 @@ nav li {
 }
 
 
-/*Hero*/ 
+/*Hero*/
 
 
 #hero {
@@ -62,7 +62,7 @@ nav li {
 
 /*Hero Video*/
 
-#video-background { 
+#video-background {
 	position: absolute;
     top: 0;
     right: 0;
@@ -155,3 +155,4 @@ footer {
 	background-color: black;
 	color: white;
 }
+ 
