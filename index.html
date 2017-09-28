@@ -8,11 +8,8 @@
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/abebc5126b.js"></script>
-    <link href="https://use.fontawesome.com/abebc5126b.css" media="all" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
@@ -24,7 +21,6 @@
         </button>
         <a class="navbar-brand" href="#">Perfect Roofing Solutions</a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
             </li>
@@ -45,10 +41,9 @@
       <div id="video-overlay"></div>
       <video autoplay loop class="video-fullscreen" id="video-background">
         <source src="img/hero.mp4" type="video/mp4">
-        <source src="http://pushhere.push.netdna-cdn.com/videos/push.webm" type="video/webm">
       </video>
       <div class="container">
-        <img src="img/placeholder.png" alt="logo">
+        <img src=<?php get_template_directory_uri()  img/placeholder.png ?> alt="logo">
         <h1 class="display-3">Perfect Solution Roofing</h1>
         <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         <button type="button" class="btn btn-primary btn-lg">Get in Contact</button>
@@ -123,11 +118,11 @@
           <!-- End Social Links -->
 
           <!-- Office Information -->
-          <div class="col-sm">
+          <div class="col-sm" id="office-info">
             <h5>Office Information</h5>
-            <div>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <p>3203 e 6th st Southwest, Fort Myers, FL 33972</p>
+            <div class="row">
+              <i class="fa fa-map-marker col-1" aria-hidden="true"></i>
+              <p class="col-9">3203 e 6th st Southwest, Fort Myers, FL 33972</p>
             </div>
             <div>
               <i class="fa fa-phone" aria-hidden="true"></i>

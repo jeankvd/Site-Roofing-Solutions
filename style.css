@@ -1,8 +1,24 @@
+/*
+Theme Name: PRS
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: Jean
+Author URI: https://wordpress.org/
+Description: Proessional Rooging
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
 /*General*/
 
 body {
 	background-color: #f2f2f2;
 	color: #FEFEFC;
+}
+
+.admin-bar nav {
+	margin-top: 25px;
 }
 
 /*Nav*/
@@ -89,7 +105,7 @@ nav li {
 
 /*About Us*/
 
-#about {
+.jumbotron:not(#hero) {
 	margin: 0;
 	text-align: center;
 	background: #EF3237;
@@ -157,4 +173,12 @@ form input {
 footer {
 	background-color: black;
 	color: white;
+}
+
+#office-info p {
+	display: inline-block;
+}
+
+#office-info div {
+	text-align: left;
 }
