@@ -36,13 +36,12 @@
       <!-- End Office Information -->
 
       <!-- Contact Form -->
-      <div class="col-sm">
-        <form>
-            <input type="text" name="name" id="name" placeholder="Name">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <input type="text" name="subject" id="subject" placeholder="Subject">
-            <input type="tel" name="phone" placeholder="Phone">
-            <textarea placeholder="Talk to Us"></textarea>
+      <div class="col-sm container">
+        <form class="row">
+            <input class="col-12" type="text" name="name" id="name" placeholder="Name">
+            <input class="col-6" type="email" name="email" id="email" placeholder="Email">
+            <input class="col-6 ml-auto" type="tel" name="phone" placeholder="Phone">
+            <textarea placeholder="Talk to Us" class="col-12"></textarea>
         </form>
       </div>
       <!-- End Contact Form -->

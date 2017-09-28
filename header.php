@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Perfect Roofing Solutions</title>
+    <title><?php bloginfo( 'title' ); ?></title>
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/abebc5126b.js"></script>
@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <?php wp_head(); ?>
   </head>
-  <body <?php body_class( ); ?>>
+  <body <?php body_class(); ?>>
 
     <!-- Navbar -->
     <nav class="navbar navbar-toggleable-md fixed-top" id="unscrolled">
@@ -22,7 +22,16 @@
         </button>
         <a class="navbar-brand" href="#">Perfect Roofing Solutions</a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
+          <?php
+            $defaults =  array(
+              'theme_location' => 'primary',
+              'container' => false,
+              'menu_class' => 'navbar-nav ml-auto'
+              );
+
+            wp_nav_menu($defaults);
+          ?>
+          <!-- <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
             </li>
@@ -32,7 +41,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>

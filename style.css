@@ -164,9 +164,21 @@ nav li {
 
 /*Form*/
 
-form input {
+form input , form textarea {
 	display: block;
+	background-color: #333;
+	border: none;
+	margin: 1%;
+	margin-left: 0;
+	padding: 5px;
 }
+
+form input.col-6 {
+	margin: 0;
+	max-width: 49%;
+	display: inline-block;
+}
+
 
 /*Footer*/
 
