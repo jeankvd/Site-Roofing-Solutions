@@ -14,6 +14,8 @@ add_theme_support( "menus" );
     wp_enqueue_script( "main_js", get_template_directory_uri() . '/js/app.js', '', '' , true );
   }
 
+  add_action( 'wp_enqueue_scripts', 'prs_theme_scripts', '', '');
+
   function register_theme_menus() {
     register_nav_menus(array(
         'primary' => 'primary_menu'
