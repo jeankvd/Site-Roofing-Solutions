@@ -1,13 +1,15 @@
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
 
-
 <div class="jumbotron">
-  <h1><?php the_title() ?></h1>
+  <h1>Our Blog</h1>
 </div>
 <div class="container">
-  <p><?php the_content(); ?></p>
+  <p>See more about Us</p>
 </div>
+
+<?php the_title() ?>
+<?php the_excerpt() ?>
 
 <?php endwhile; ?>
 <?php endif; ?>
