@@ -39,16 +39,27 @@ body {
 	color: #f2f2f2;
 }
 
-.page p {
-	text-align: left;
+.home p {
+	text-align: center;
 }
 
 /*FAQ*/
 
 .page-id-15 {
-	
+
 }
 
+/*Contact Us*/
+
+#contact-banner {
+	background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6) ), url("img/worker.jpg") no-repeat center 25% !important;
+	padding: 8%;
+	background-size: 100% !important;
+}
+
+#contact-info {
+	text-align: center;
+}
 /*Nav*/
 
 nav {
@@ -90,6 +101,11 @@ nav li {
 	display: inline-block;
 }
 
+/*Contact*/
+
+.page-id-8 input, .page-id-8 textarea{
+	background-color: white;
+}
 
 /*Hero*/
 
