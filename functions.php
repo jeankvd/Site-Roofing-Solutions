@@ -25,4 +25,25 @@ add_theme_support( "menus" );
 
   add_action( 'init', 'register_theme_menus');
 
+  function custom_excerpt_length( $length ) {
+        return 20;
+    }
+
+  add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+  function create_widget($name, $id, $description) {
+    register_sidebar(array(
+      'name' => __( $name ),
+        'id' => $id,
+        'description' => __( $description ),
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+  }
+
+  create_widget("FAQ Sidebar", "faq", "Displays on the right of About Us Page");
+  create_widget("Primary Sidebar", "primary", "Displays on the right of the blog page");
+
 ?>
