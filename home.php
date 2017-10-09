@@ -7,7 +7,7 @@
 
 <div class="container">
   <div class="row" >
-    <div class="col-9" id="blog-list">
+    <div class="col-lg-9" id="blog-list">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
 
       <div class="" id="blog-container">

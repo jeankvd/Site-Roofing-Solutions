@@ -11,7 +11,7 @@
 
 <div class="container" >
   <div class="row">
-    <div class="col-9" id="faq-list">
+    <div class="col-lg-9" id="faq-list">
       <div id="info">
         <?php
 

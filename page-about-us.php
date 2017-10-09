@@ -12,21 +12,21 @@
 <!-- Could've hardcoded this into either a non-dynamic template or into the editor and disabling the visual editor but I wanted to give my client more control over the content -->
 <div class="container" id="about-container">
   <div class="row">
-    <div class="col-6">
+    <div class="col-sm-6">
       <h2><?php the_field('title_left_column');?></h2>
       <p><?php the_field('paragraph_left_column'); ?></p>
     </div>
-    <div class="col-6">
+    <div class="col-sm-6">
       <h2><?php the_field('title_right_column');?></h2>
       <p><?php the_field('paragraph_right_column'); ?></p>
     </div>
   </div>
   <hr>
   <div class="row">
-    <div class="col-6">
+    <div class="col-sm-6">
       <img class="img-fluid" src="<?php the_field('image_bottom_column') ?>" />
     </div>
-    <div class="col-6">
+    <div class="col-sm-6">
       <h2><?php the_field('title_bottom_column');?></h2>
       <p><?php the_field('paragraph_bottom_column'); ?></p>
     </div>

@@ -479,7 +479,7 @@ footer #copyright {
 		/*Hero*/
 
 		#hero .container {
-			margin-top: 0;
+			margin-top: 5vh;
 		}
 
 		#hero h1 {
@@ -521,26 +521,6 @@ footer #copyright {
 
 		#about-container {
 			text-align: center;
-		}
-
-		/*faq*/
-
-		#faq-list a {
-			font-size: 1.1rem;
-		}
-
-		#faq-list .collapse {
-			font-size: 1rem;
-		}
-
-		/*Blog & faq*/
-
-		#faq-sidebar, #blog-sidebar {
-			display: none;
-		}
-
-		#blog-list, #faq-list {
-			width: 100%;
 		}
 
 }

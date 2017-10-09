@@ -45,18 +45,16 @@
   </div>
 
   <div class="row">
-    <div class="col-6">
+    <div class="col-sm-6">
       <h4>Email</h4>
-      <input class="" type="email" name="email" id="email" placeholder="">
+      <input class="col-sm-6" type="email" name="email" id="email" placeholder="">
     </div>
 
-  <div class="col-6">
+  <div class="col-sm-6">
     <h4>Phone</h4>
-    <input class="col-6 ml-auto" type="tel" name="phone" placeholder="">
+    <input class="col-sm-6 ml-auto" type="tel" name="phone" placeholder="">
   </div>
   </div>
-
-
 
     <h4>How can we help You</h4>
     <textarea placeholder="" class="col-12"></textarea>

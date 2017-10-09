@@ -7,8 +7,7 @@
 <div class="container">
   <div class="row" >
     <div class="col-9" id="blog-list">
-      <div class="" id="blog-container">
-          <h4><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h4>
+      <div class="blog-entry" id="blog-container">
           <?php the_content() ?>
       </div>
 
