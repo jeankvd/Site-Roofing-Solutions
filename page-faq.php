@@ -12,10 +12,33 @@
 <div class="container" >
   <div class="row">
     <div class="col-9" id="faq-list">
-      <div id="info"><?php the_content(); ?></div>
-    </div>
+      <div id="info">
+        <?php
 
-<?php get_sidebar("faq") ?>
+        $args = array('post_type' => 'question');
+
+// The Query
+$the_query = new WP_Query( $args );
+
+// The Loop
+if ( $the_query->have_posts() ) {
+  $i = 0;
+	while ( $the_query->have_posts() ) {
+		$the_query->the_post();
+    echo '<div class="question" data-toggle="collapse" data-target="#question' . $i .'" aria-expanded="false" aria-controls="question' . $i .'">';
+		echo '<a>' . get_the_title() . '</a>';
+    echo '<div class="collapse" id="question' . $i .'">' . get_the_content() . '</div>';
+    echo '</div>';
+    $i++;
+	}
+  echo '</div>';
+echo '</div>';
+
+	/* Restore original Post Data */
+	wp_reset_postdata();
+} ?>
+
+<?php get_sidebar( 'faq' ); ?>
 
   </div>
 </div>

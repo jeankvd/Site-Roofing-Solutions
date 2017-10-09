@@ -17,6 +17,26 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 body {
 	background-color: #f2f2f2;
 	color: #FEFEFC;
+	font-family: "Muli", sans-serif;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+}
+
+p {
+	line-height: 1.8;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h1, h2, h3 , h5, h6 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+
+h2, h3 , h5, h6 {
+	color: #96171a;
 }
 
 .admin-bar nav{
@@ -54,6 +74,21 @@ textarea {
 	padding: 8%;
 	background-size: 100% !important;
 }
+#blog-list {
+	margin-bottom: 3%;
+}
+
+#blog-container p {
+	font-size: 1.1rem;
+}
+
+#blog-container h4 {
+	margin-bottom: 0;
+}
+
+#blog-container hr {
+	margin-top: 0;
+}
 
 /* About Us */
 
@@ -79,26 +114,34 @@ textarea {
 	background-size: 100% !important;
 }
 
-.question h3 {
+.question {
 	margin: 1.5%;
+	margin-bottom: 3%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 3%;
 }
 
-.question .card {
-	color: blue;
-}
-
-.question h3, .question .card {
-	text-align: left;
-}
-
-#info {
+#faq-list, #faq-sidebar {
 	margin-top: 4%;
 	margin-bottom: 4%;
 }
 
+#faq-list a {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #173664;
+	text-decoration: underline;
+}
+
+.collapsing, .collapse {
+	margin-top: 1%;
+	font-size: 1.1rem;
+}
+
 /*Contact Us*/
 
-#main-form h2 {
+#main-form h3 {
 	text-align: center;
 	margin-top: 2%;
 	margin-bottom: 3%;
@@ -106,6 +149,7 @@ textarea {
 
 #main-form h4 {
 	text-align: left;
+	color: black;
 }
 
 #main-form .col-6 {
@@ -133,6 +177,13 @@ textarea {
   height: 200px;
 }
 
+#main-form input[type=submit] {
+	color: white;
+	background-color: #96171a;
+	font-size: 1.3rem;
+	padding: 1% 2%;
+}
+
 #contact-banner {
 	background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6) ), url("img/worker.jpg") no-repeat center 25% !important;
 	padding: 8%;
@@ -148,22 +199,29 @@ textarea {
 	margin: 4%;
 }
 
+#contact-info h3 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	margin-bottom: 3%;
+	color:  #96171a;
+}
+
 #contact-info span {
 	font-weight: bold;
 }
 
 /*Blog*/
 
-#blog-container {
+#blog-container, #blog-sidebar {
 	color: black;
+}
+
+#blog-container h4, #blog-sidebar {
+	margin-top: 4%;
 }
 
 #blog-list, #blog-sidebar, #faq-list, #faq-sidebar {
 	display: inline-block;
-}
-
-#blog-sidebar {
-	color: black;
 }
 
 /*Nav*/
@@ -255,7 +313,7 @@ nav li {
 .jumbotron:not(#hero) {
 	margin: 0;
 	text-align: center;
-	background: #EF3237;
+	background: #96171B;
 	z-index: 0;
 }
 

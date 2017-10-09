@@ -29,7 +29,7 @@
 <div class="container">
   <form id="main-form">
 
-<h2>Tell Us How We Can Help You</h2>
+<h3>Tell Us How We Can Help You</h3>
 
 <h4>Name</h4>
   <div class="row">
