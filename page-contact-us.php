@@ -16,6 +16,8 @@
     <p>3203 e 6ht st <br> Miami, Florida 33972, USA</p>
     <span>(239)-200-2373</span>
   </div>
+<hr>
+  
 </div>
 
 <?php endwhile; ?>
@@ -23,7 +25,6 @@
 
 
 
-<hr>
 
 <!-- Form -->
 <div class="container">

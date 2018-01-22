@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?php bloginfo( 'title' ); ?></title>
 
-    <!--  Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Poppins:400,700" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/abebc5126b.js"></script>
-
     <!-- Bootstrap CSS -->
     <?php wp_head(); ?>
   </head>

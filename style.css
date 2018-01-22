@@ -1,9 +1,9 @@
 /*
 Theme Name: PRSss
-Theme URI: https://wordpress.org/themes/twentyseventeen/
+Theme URI: jeankvd.github.io
 Author: Jean
-Author URI: https://wordpress.org/
-Description: Proessional Rooging
+Author URI: jeankvd.github.io
+Description: Professional Roofing
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,8 +14,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /*General*/
 
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
 body {
-	background-color: #f2f2f2;
 	color: #FEFEFC;
 	font-family: "Muli", sans-serif;
 	font-size: 18px;
@@ -25,6 +30,15 @@ body {
 p {
 	line-height: 1.8;
 }
+
+hr {
+	background-color: #6B6B6B;
+}
+
+.blog hr {
+	background-color: white;
+}
+
 
 h1 {
 	font-size: 3rem;
@@ -55,8 +69,12 @@ textarea {
 /*page.php Stylings*/
 
 .page {
-	background-color: #f2f2f2;
+	background-color: white;
 	color: #000;
+}
+
+.page-id-15 {
+	background-color: #f2f2f2;
 }
 
 .page h1, .blog h1 {
@@ -74,6 +92,14 @@ textarea {
 
 /*Blog*/
 
+.blog footer, .single-post footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
 #blog-banner {
 	background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6) ), url("img/big-roof.jpeg") no-repeat center center !important;
 	padding: 8%;
@@ -85,6 +111,7 @@ textarea {
 
 #blog-container p {
 	font-size: 1.1rem;
+	margin-left: 15px;
 }
 
 #blog-container h4 {
@@ -116,8 +143,14 @@ textarea {
 	margin-bottom: 4%;
 }
 
+#about-container p {
+	line-height: 1.5;
+	font-size: 20px;
+}
+
 #about-container h2 , #about-container hr {
 	margin-bottom: 3%;
+	line-height: 1.2;
 }
 
 /*FAQ*/
@@ -150,6 +183,7 @@ textarea {
 
 .question div {
 	margin-top: 1%;
+	margin-left: 18px;
 	font-size: 1.1rem;
 }
 
@@ -162,6 +196,8 @@ textarea {
 }
 
 #main-form h4 {
+	font-weight: 700;
+	font-size: 20px;	
 	text-align: left;
 	color: black;
 }
@@ -174,6 +210,14 @@ textarea {
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: 0;
+	transition: all .4s ease-in-out;
+	border: 1px solid #ddd
+	
+}
+
+#main-form input:not([type='submit']):focus {
+	outline: none;
+	border: solid 1px #6B6B6B;
 }
 
 #main-form label{
@@ -217,6 +261,7 @@ textarea {
 	font-family: "Poppins", sans-serif;
 	font-weight: 700;
 	margin-bottom: 3%;
+	font-size: 30px;
 	color:  #96171a;
 }
 
@@ -306,8 +351,13 @@ nav li:not(:last-child) {
 	text-align: center;
 	height: 100vh;
 	margin: 0;
+	background-image: url("img/hero-bg.png") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 	color: white;
 }
+
 
 #hero .container {
 	margin-top: 13vh;
@@ -323,9 +373,9 @@ nav li:not(:last-child) {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 100%; /*Console View*/
     z-index: -100;
-    width: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 #video-overlay {
@@ -335,7 +385,8 @@ nav li:not(:last-child) {
     bottom: 0;
     left: 0;
     z-index: -99;
-    width: 100%;
+	width: 100%;
+	height: 100%;
     background-color: rgba(0,0,0,.6);
 }
 
@@ -375,6 +426,8 @@ nav li:not(:last-child) {
 }
 
 #services h2 {
+	font-size: 50px;
+	text-transform: uppercase;
 	margin-bottom: 3%;
 }
 
@@ -386,8 +439,13 @@ nav li:not(:last-child) {
 	text-align: center;
 }
 
+#services .row {
+	width: 75%;
+	margin: 0 auto;
+}
+
 #services .col-sm {
-	border: solid 1px #aaa;
+
 	border-radius: 2px;
 	margin-left: 2%;
 	padding: 3%;
@@ -400,7 +458,12 @@ nav li:not(:last-child) {
 }
 
 #services .col-sm h4 {
+	font-family: "Poppins";
 	margin-bottom: 5%;
+	font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 #services .col-sm:last-child {
@@ -411,15 +474,23 @@ nav li:not(:last-child) {
 	background-color: #96171a;
 	color: #fff;
 	border-radius: 0;
+
 }
 
 .jumbotron:not(#hero) .display-3 {
-	font-size: 3.5rem;
 	font-family: "Poppins";
+	font-weight: 700;
+	font-size: 40px;
+	text-transform: uppercase;
 }
 
 .jumbotron:not(#hero) .lead {
-	font-size: 1.5rem;
+	font-family: "Muli";
+	font-weight: 400;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.5;
+
 }
 
 /*Form*/
@@ -446,6 +517,7 @@ footer {
 	padding-top: 3%;
 	background-color: black;
 	color: white;
+	vertical-align: bottom;
 }
 
 #office-info h5 {
@@ -478,7 +550,19 @@ footer #copyright {
   and (max-device-width: 568px) {
 
 
+	/* Footer */
+
+	.blog footer, .single-post footer {
+		position: static;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+	}
+
 		/*Nav*/
+
+		
 
 		#hamburger div {
 	    width: 35px;
@@ -490,6 +574,14 @@ footer #copyright {
 		/*nav li {
 			border-bottom: solid 1px grey;
 		}*/
+
+		 nav {
+			margin: 0!important;
+		}
+
+		#services .row {
+			width: 100%;
+		}
 
 		.navbar {
 			padding: .5rem;
@@ -531,6 +623,8 @@ footer #copyright {
 			display: block;
 		}
 
+
+
 		#video-background {
 			display: none;
 		}
@@ -545,6 +639,8 @@ footer #copyright {
 
 		.jumbotron:not(#hero) .display-3 {
 			font-size: 3rem;
+			font-family: "Poppins";
+			font-weight: 700;
 		}
 
 		.jumbotron:not(#hero) .lead {
