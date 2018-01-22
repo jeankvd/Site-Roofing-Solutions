@@ -27,7 +27,7 @@
 
 <!-- Form -->
 <div class="container">
-  <form id="main-form">
+  <form id="main-form" action='<?php the_permalink(); ?>' method="POST">
 
 <h3>Tell Us How We Can Help You</h3>
 
@@ -57,10 +57,21 @@
   </div>
 
     <h4>How can we help You</h4>
-    <textarea placeholder="" class="col-12"></textarea>
+    <textarea placeholder="" name="text" class="col-12"></textarea>
 
     <input type="submit" class="btn" name="submit" action="post" value="Submit">
   </form>
+  <?php
+  if(isset($_POST['first_name'])) {
+    $name = $_POST['first_name'] . " " . $_POST['last_name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $text = $_POST['text'];
+    $to = "djjean85@gmail.com";
+    $subject = "$name inquire";
+    $message = "Hi I'm $name and my phone number is $phone and my email is $email . You can help me with this: $text";
+    mail($to, $subject, $message);
+  } ?>
 </div>
 
 

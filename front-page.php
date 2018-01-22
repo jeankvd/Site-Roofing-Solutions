@@ -9,7 +9,7 @@
   </video>
   <img src="<?php echo get_template_directory_uri() . "/img/tiles.jpeg" ?>" id="hero-backup"/>
   <div class="container">
-    <img src="<?php echo get_template_directory_uri() . "/img/placeholder.png" ?>" alt="logo">
+    <img src="<?php echo get_template_directory_uri() . "/img/placeholder-red.png" ?>" alt="logo">
     <h1 class="display-3">Perfect Solution Roofing</h1>
     <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
     <button type="button" class="btn btn-primary btn-lg">Get in Contact</button>

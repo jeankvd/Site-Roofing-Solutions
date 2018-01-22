@@ -14,22 +14,22 @@
         <h5>Office Information</h5>
         <div class="row">
           <i class="fa fa-map-marker col-1" aria-hidden="true"></i>
-          <p class="col-9">3203 e 6th st Southwest, Fort Myers, FL 33972</p>
+          <a href="https://www.google.com/maps/place/3637+NW+23rd+Ave,+Miami,+FL+33142/@25.8100321,-80.2360589,17z/data=!3m1!4b1!4m5!3m4!1s0x88d9b0d5a4083cdf:0x1e41aaeaaecdd1e8!8m2!3d25.8100321!4d-80.2338702" class="col-9">3637 NW 23 Ave Miami, Fl 33412</a>
         </div>
         <div>
           <i class="fa fa-phone" aria-hidden="true"></i>
-          <p>(239)-200-2373</p>
+          <a href="tel:7867622373">(786)-762-2373</a>
         </div>
         <div>
           <i class="fa fa-envelope" aria-hidden="true"></i>
-          <p>djjean85@gmail.com</p>
+          <a href="mailto:perfectsolutionroofing@gmail.com?Subject=Hello">perfectsolutionroofing@gmail.com</a>
         </div>
       </div>
       <!-- End Office Information -->
 
       <!-- Contact Form -->
       <div class="col-sm container" >
-        <form class="row">
+        <form class="row" method="POST" action="<?php the_permalink();?>">
             <input class="col-12" type="text" name="name" id="name" placeholder="Name">
             <input class="col-sm-6" type="email" name="email" id="email" placeholder="Email">
             <input class="col-sm-6 ml-auto" type="tel" name="phone" placeholder="Phone">
@@ -37,6 +37,17 @@
             <input type="submit" class=".btn" name="" value="Submit">
         </form>
       </div>
+      <?php
+      if(isset($_POST['first_name'])) {
+        $name = $_POST['first_name'] . " " . $_POST['last_name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $text = $_POST['text'];
+        $to = "djjean85@gmail.com";
+        $subject = "$name inquire";
+        $message = "Hi I'm $name and my phone number is $phone and my email is $email . You can help me with this: $text";
+        mail($to, $subject, $message);
+      } ?>
       <!-- End Contact Form -->
     </div>
   </div>

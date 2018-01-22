@@ -59,7 +59,7 @@ textarea {
 	color: #000;
 }
 
-.page h1 {
+.page h1, .blog h1 {
 	margin-top: 50px;
 }
 
@@ -113,6 +113,7 @@ textarea {
 
 #about-container {
 	margin-top: 3%;
+	margin-bottom: 4%;
 }
 
 #about-container h2 , #about-container hr {
@@ -147,7 +148,7 @@ textarea {
 	text-decoration: underline;
 }
 
-.collapsing, .collapse {
+.question div {
 	margin-top: 1%;
 	font-size: 1.1rem;
 }
@@ -451,12 +452,12 @@ footer {
 	text-align: center;
 }
 
-#office-info p {
+#office-info a {
 	display: inline-block;
+	text-decoration: none;
+	color: #9a9;
 	line-height: 1.2;
-}
-
-#office-info p{
+	margin-bottom: 12px;
 	text-align: left;
 }
 
@@ -476,10 +477,44 @@ footer #copyright {
   and (min-device-width: 320px)
   and (max-device-width: 568px) {
 
+
+		/*Nav*/
+
+		#hamburger div {
+	    width: 35px;
+	    height: 5px;
+	    background-color: white;
+	    margin: 6px 0;
+		}
+
+		/*nav li {
+			border-bottom: solid 1px grey;
+		}*/
+
+		.navbar {
+			padding: .5rem;
+		}
+
+		#unscrolled {
+			background-color: #0b0100;
+		}
+
+		.home #unscrolled .container {
+			border: none;
+		}
+
+
+
+		.navbar-toggler {
+			padding: 0;
+			display: block;
+			position: relative;
+		}
+
 		/*Hero*/
 
 		#hero .container {
-			margin-top: 0;
+			margin-top: 9vh;
 		}
 
 		#hero h1 {
@@ -529,7 +564,7 @@ footer #copyright {
 			font-size: 1.1rem;
 		}
 
-		#faq-list .collapse {
+		#faq-list .question div {
 			font-size: 1rem;
 		}
 
@@ -541,6 +576,18 @@ footer #copyright {
 
 		#blog-list, #faq-list {
 			width: 100%;
+		}
+
+		/*Footer */
+
+		footer .col-sm {
+			min-height: 0;
+		}
+
+
+
+		.navbar .container {
+			margin: 0;
 		}
 
 }

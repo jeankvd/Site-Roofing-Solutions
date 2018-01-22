@@ -20,11 +20,17 @@
     <!-- Navbar -->
     <nav class="navbar navbar-toggleable-md fixed-top" id="unscrolled">
       <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar-toggler-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <a class="navbar-brand" href="#">Perfect Roofing Solutions</a>
+          <a class="navbar-brand" href="<?php echo get_home_url(); ?>" >
+            Perfect Roofing Solutions
+          </a>
           <?php
             $defaults =  array(
               'theme_location' => 'primary',
@@ -34,17 +40,6 @@
 
             wp_nav_menu($defaults);
           ?>
-          <!-- <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul> -->
         </div>
       </div>
     </nav>
